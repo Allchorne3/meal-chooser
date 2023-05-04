@@ -1,18 +1,15 @@
 ---
 layout: base.njk
-pageClass: article
+pageClass: recipe
 ---
 <div id="progress-bar"></div>
 <article class="article">
   <div class="container container--narrow flow">
-    
-      <h1 class="article-title">{{ title }}</h1>
-      <h5>Written by {{author}}</h5>
-      <time>{{ date | prettyDate }} - {{ content | emojiReadTime }}</time>
-
+      <h1>Recipe layout page</h1>
+      
       <div class="content">
+        calories: {{ calories }}
         {{ content | safe }}
       </div>
-
   </div>
 </article>
