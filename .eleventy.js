@@ -5,9 +5,9 @@ module.exports = function(eleventyConfig) {
     // Recomplile 11ty when files change
     eleventyConfig.addWatchTarget("./src/style/")
 
-    // eleventyConfig.addCollection("featuredPosts", collection => {
-    //     return collection.getFilteredByTag("post").filter(item => item.data.featured);
-    // });
+    eleventyConfig.addCollection("recipes", collection => {
+        return collection.getFilteredByTag("recipes");
+    });
 
     // Automatically open up the browser on script runs
     eleventyConfig.setBrowserSyncConfig({

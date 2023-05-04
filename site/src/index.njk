@@ -3,4 +3,10 @@ layout: base.njk
 title: Example
 ---
 
-
+<div class="container">
+    {% for recipe in collections.recipes %}
+    <ul>
+      <li>{{ recipe.data.title }}</li>
+    </ul>
+    {% endfor %}
+</div>
