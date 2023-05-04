@@ -1,28 +1,13 @@
-const emojiReadTime = require("@11tyrocks/eleventy-plugin-emoji-readtime") //For blog post read time
 const htmlmin = require("html-minifier"); //minify html
-
-const prettyDate = require('./lib/pretty-date.js')
 
 module.exports = function(eleventyConfig) {
 
     // Recomplile 11ty when files change
     eleventyConfig.addWatchTarget("./src/style/")
 
-    eleventyConfig.addCollection("featuredPosts", collection => {
-        return collection.getFilteredByTag("post").filter(item => item.data.featured);
-    });
-
-    // Expose Nunjucks filters
-    eleventyConfig.addFilter("prettyDate", prettyDate);
-
-    // From https://www.npmjs.com/package/@11tyrocks/eleventy-plugin-emoji-readtime
-    eleventyConfig.addPlugin(emojiReadTime, { 
-        showEmoji: false, 
-        wpm: 250,
-        // emoji: "🕚",
-        label: "min read",
-        bucketSize: 1,
-    })
+    // eleventyConfig.addCollection("featuredPosts", collection => {
+    //     return collection.getFilteredByTag("post").filter(item => item.data.featured);
+    // });
 
     // Automatically open up the browser on script runs
     eleventyConfig.setBrowserSyncConfig({
@@ -44,7 +29,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addGlobalData('site', {
         name: 'Your Site Name',
         url: 'https://yoursitename.com',
-        host: process.env.NODE_ENV === 'production' ? 'https://gearset.com' : 'http://localhost:8080',
+        host: process.env.NODE_ENV === 'production' ? 'YOUR_SITE_NAME' : 'http://localhost:8080',
         slogan: 'Your global site slogan',
         description: "your default site description"
     });
