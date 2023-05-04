@@ -4,9 +4,9 @@ title: Example
 ---
 
 <div class="container">
-    {% for recipe in collections.recipes %}
-    <ul>
-      <li>{{ recipe.data.title }}</li>
-    </ul>
-    {% endfor %}
+  <ul role="list" class="articles__list flow">
+    {% for recipe in collections.recipe %}
+    <li><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></li>
+    {% endfor %}  
+  </ul>
 </div>

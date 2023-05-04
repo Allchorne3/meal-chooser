@@ -5,8 +5,8 @@ module.exports = function(eleventyConfig) {
     // Recomplile 11ty when files change
     eleventyConfig.addWatchTarget("./src/style/")
 
-    eleventyConfig.addCollection("recipes", collection => {
-        return collection.getFilteredByTag("recipes");
+    eleventyConfig.addCollection("recipe", collection => {
+        return collection.getFilteredByTag("recipe");
     });
 
     // Automatically open up the browser on script runs

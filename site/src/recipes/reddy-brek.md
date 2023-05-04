@@ -5,7 +5,6 @@ ingredients:
  - { name: "Almond Milk", amount: "240ml" }
  - { name: "Honey", amount: "12g" }
 calories: 305
-tag: recipes
 ---
 
 1. Add 60g of Reddy Brek into a bowl.
