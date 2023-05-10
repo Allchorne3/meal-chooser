@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: Recipes
+---
+
+<div class="container">
+    <h1>Recipes</h1>
+    <ul role="list" class="articles__list flow">
+    {% for recipe in collections.recipe %}
+        <li><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></li>
+    {% endfor %}  
+    </ul>
+</div>

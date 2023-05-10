@@ -1,9 +1,9 @@
 ---
 title: Reddy Brek
 ingredients:
- - { name: "Reddy Brek", amount: "60g" }
- - { name: "Almond Milk", amount: "240ml" }
- - { name: "Honey", amount: "12g" }
+ - { ingredient: "Reddy Brek", amount: "60g" }
+ - { ingredient: "Almond Milk", amount: "240ml" }
+ - { ingredient: "Honey", amount: "12g" }
 calories: 305
 layout: recipe.njk
 ---

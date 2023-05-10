@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: Macros
+---
+
+<div class="container">
+    <h1>Macros</h1>
+    <ul role="list" class="articles__list flow">
+    {% for macro in collections.macro %}
+        <li><a href="{{ macro.url }}">{{ macro.data.title }}</a></li>
+    {% endfor %}  
+    </ul>
+</div>

@@ -1,14 +1,19 @@
 ---
 layout: base.njk
-pageClass: recipe
+pageClass: macro
 ---
 
 <article article class="article">
   <div class="container container--narrow flow">
-      <h1>Recipe layout page</h1>
+      <h1>Macro layout page</h1>
       
       <div class="content">
-        calories: {{ calories }}
+        <p>Per {{ per }}</p>
+
+        {% for macro in macros %}
+          <p>{{macro.macro}}: {{ macro.amount }}</p>
+        {% endfor %}
+
         {{ content | safe }}
       </div>
   </div>

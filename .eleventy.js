@@ -9,6 +9,10 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByTag("recipe");
     });
 
+    eleventyConfig.addCollection("macro", collection => {
+        return collection.getFilteredByTag("macro");
+    });
+
     // Automatically open up the browser on script runs
     eleventyConfig.setBrowserSyncConfig({
         open: true
