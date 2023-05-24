@@ -8,7 +8,13 @@ pageClass: recipe
       <h1>Recipe layout page</h1>
       
       <div class="content">
-        calories: {{ calories }}
+        <ul>
+          <li>Calories: {{ calories }}</li>
+          <li>Fat: {{ fat }}</li>
+          <li>Carbs: {{ carbs }}</li>
+          <li>Protein: {{ protein }}</li>
+        </ul>
+
         {{ content | safe }}
       </div>
   </div>

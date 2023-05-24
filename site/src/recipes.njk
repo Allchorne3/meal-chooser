@@ -7,7 +7,11 @@ title: Recipes
     <h1>Recipes</h1>
     <ul role="list" class="articles__list flow">
     {% for recipe in collections.recipe %}
-        <li><a href="{{ recipe.url }}">{{ recipe.data.title }}</a></li>
+        <li>
+            <a href="{{ recipe.url }}">
+                {{ recipe.data.title }} (Calories: {{ recipe.data.calories }} | Fat: {{ recipe.data.fat }} | Carbs: {{ recipe.data.carbs }} | Protein: {{ recipe.data.protein }})
+            </a>
+        </li>
     {% endfor %}  
     </ul>
 </div>
