@@ -3,7 +3,7 @@ title: Cottage Cheese
 brand: Asda Just Essentials
 calories: 52
 per: 100g
-macros:
+macronutrient:
  - { macro: "Calories", amount: "52" }
  - { macro: "Carbs", amount: "60g" }
  - { macro: "Protein", amount: "240ml" }

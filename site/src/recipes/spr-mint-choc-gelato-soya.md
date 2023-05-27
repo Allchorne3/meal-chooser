@@ -7,7 +7,7 @@ calories: 207
 fat: 5g
 carbs: 5g
 protein: 35g
-layout: recipe.njk
+mealType: high protein
 ---
 
 1. Blend soya milk and post workout powder.

@@ -8,7 +8,7 @@ calories: 402
 fat: 2.5g
 carbs: 41g
 protein: 53g
-layout: recipe.njk
+mealType: dinner
 ---
 
 1. Microwave the jacket potato.

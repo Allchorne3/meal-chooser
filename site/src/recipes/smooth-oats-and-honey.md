@@ -8,7 +8,7 @@ calories: 308
 fat: 9g
 carbs: 46g
 protein: 9g
-layout: recipe.njk
+mealType: breakfast
 ---
 
 1. Add Reddy Brek into a bowl.

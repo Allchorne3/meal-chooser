@@ -8,7 +8,7 @@ calories: 470
 fat: 6g
 carbs: 62.6g
 protein: 11.5g
-layout: recipe.njk
+mealType: breakfast
 ---
 
 1. Add bran flaskes into a bowl.
