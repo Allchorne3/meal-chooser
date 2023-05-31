@@ -5,7 +5,10 @@
 @use 'base/typography';
 @use 'base/base';
 
+@use 'layouts/recipe-card';
+
 @use 'sections/header';
 @use 'sections/footer';
+@use 'sections/index';
 
-@use 'page/home';
+@import 'bulma/css/bulma.css';

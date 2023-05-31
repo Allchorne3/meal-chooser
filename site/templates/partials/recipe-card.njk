@@ -1,0 +1,63 @@
+{# 
+<div class="card has-text-centered">
+	<div class="p-3">
+		<a href="{{ recipe.url }}">
+			{{ recipe.data.title }}
+		</a>
+	</div>
+
+	<div class="columns is-card-grid">
+		<div class="column is-one-quarter">
+		<strong>Kcals</strong> {{ recipe.data.calories }}
+		</div>
+		<div class="column is-one-quarter">
+			<strong>Fat</strong> {{ recipe.data.fat }}
+		</div>
+		<div class="column is-one-quarter">
+			<strong>Carbs</strong> {{ recipe.data.carbs }}
+		</div>
+		<div class="column is-one-quarter">
+			<strong>Pro</strong> {{ recipe.data.protein }}
+		</div>
+	</div>
+</div> #}
+
+<a href="{{ recipe.url }}">
+	<div class="card is-recipe-card">
+		<div class="card-image">
+			<figure class="image is-4by3">
+				<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			</figure>
+		</div>
+
+		<div class="card-content">
+			<div class="media">
+				<div class="media-content">
+					<p class="title is-4">{{ recipe.data.title }}</p>
+					<p class="subtitle is-6">Tags</p>
+				</div>
+			</div>
+		</div>
+
+		<footer class="card-footer">
+			<p class="card-footer-item">kcals</p>
+			<p class="card-footer-item">Fat</p>
+			<p class="card-footer-item">Carbs</p>
+			<p class="card-footer-item">Pro</p>
+		</footer>
+		<footer class="card-footer">
+			<p class="card-footer-item">
+				{{ recipe.data.calories }}
+			</p>
+			<p class="card-footer-item">
+				{{ recipe.data.fat }}
+			</p>
+			<p class="card-footer-item">
+				{{ recipe.data.carbs }}
+			</p>
+			<p class="card-footer-item">
+				{{ recipe.data.protein }}
+			</p>
+		</footer>
+	</div>
+</a>

@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+.is-recipe-card {
+    .card-footer {
+        &:first-of-type {
+            .card-footer-item {
+                padding-block: 0.3rem;
+                background: $clr-neutral-200;
+            }
+        }
+    }
+}

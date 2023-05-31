@@ -6,12 +6,16 @@
 
 body {
   font-family: $ff-body;
-  font-size: $fs-400;
+  font-size: $size-6;
   color: $clr-neutral-900;
-  background: $clr-neutral-200;
 }
 
 section,
 .section {
   padding: min(10vh, 10em) 0;
+}
+
+.content {
+  max-width: 670px;
+  margin-inline: auto;
 }

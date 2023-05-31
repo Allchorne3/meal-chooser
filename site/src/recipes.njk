@@ -3,77 +3,39 @@ layout: base.njk
 title: Recipes
 ---
 
-<div class="container">
+<div class="container is-max-desktop">
     <h1>Recipes</h1>
-    <h2>Breakfasts</h2>
+
+    <h2 class="title">Breakfasts</h2>
+    <div class="columns">
     {% for recipe in collections.recipe %}
         {% if recipe.data.mealType === 'breakfast' %}
-        <ul role="list" class="articles__list flow">
-            <li>
-                <a href="{{ recipe.url }}">
-                    {{ recipe.data.title }} (Calories: {{ recipe.data.calories }} | Fat: {{ recipe.data.fat }} | Carbs: {{ recipe.data.carbs }} | Protein: {{ recipe.data.protein }})
-                </a>
-            </li>
-        </ul>
+        <div class="column is-one-third">
+            {% include "recipe-card.njk" %}
+        </div>
         {% endif %}
-    {% endfor %}  
+    {% endfor %}
+    </div>
 
-    <h2>Dinners</h2>
+    <h2 class="title">Dinners</h2>
+    <div class="columns">
     {% for recipe in collections.recipe %}
         {% if recipe.data.mealType === 'dinner' %}
-        <ul role="list" class="articles__list flow">
-            <li>
-                <a href="{{ recipe.url }}">
-                    {{ recipe.data.title }} (Calories: {{ recipe.data.calories }} | Fat: {{ recipe.data.fat }} | Carbs: {{ recipe.data.carbs }} | Protein: {{ recipe.data.protein }})
-                </a>
-            </li>
-        </ul>
+        <div class="column">
+            {% include "recipe-card.njk" %}
+        </div>
         {% endif %}
-    {% endfor %}  
+    {% endfor %}
+    </div> 
 
-    <h2>High Protein</h2>
+    <h2 class="title">High Protein</h2>
+    <div class="columns">
     {% for recipe in collections.recipe %}
         {% if recipe.data.mealType === 'high protein' %}
-        <ul role="list" class="articles__list flow">
-            <li>
-                <a href="{{ recipe.url }}">
-                    {{ recipe.data.title }} (Calories: {{ recipe.data.calories }} | Fat: {{ recipe.data.fat }} | Carbs: {{ recipe.data.carbs }} | Protein: {{ recipe.data.protein }})
-                </a>
-            </li>
-        </ul>
+        <div class="column">
+            {% include "recipe-card.njk" %}
+        </div>
         {% endif %}
-    {% endfor %}  
+    {% endfor %}
+    </div> 
 </div>
-
-
-{# <h2 class="title is-2 has-no-score mb-6">Day 1 - April 18th</h2>
-           {{#each collections.event}}
-               {{#eq this.data.day "1" }}
-                   {{#eq (toLowerCase this.data.room) "keynote room"}}
-                   <div class="keynote-room">
-                       {{>event}}
-                   </div>
-                   {{/eq}}
-
-
-                   {{#eq (toLowerCase this.data.room) "workshop room"}}
-                   <div class="workshop-room is-hidden">
-                       {{>event}}
-                   </div>
-                   {{/eq}}
-
-
-                   {{#eq (toLowerCase this.data.room) "devops clinic room"}}
-                   <div class="devops-clinic-room is-hidden">
-                       {{>event}}
-                   </div>
-                   {{/eq}}
-
-
-                   {{#eq (toLowerCase this.data.room) "devops launchpad lounge"}}
-                   <div class="devops-launchpad-lounge is-hidden">
-                       {{>event}}
-                   </div>
-                   {{/eq}}
-               {{/eq}}
-           {{/each}} #}

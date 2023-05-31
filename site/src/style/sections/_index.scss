@@ -1,0 +1,34 @@
+@use '../abstracts/variables' as *;
+
+/* //////////////////////
+  Home Section
+  /////////////////////// */
+
+#section-home {
+  background: radial-gradient(at top left, rgba(213,231,255,1) 0%, rgba(240,245,237,1) 60%, rgba(250,234,199,1) 100%);
+  height: 100vh;
+  clip-path: inset(1.5rem 1.5rem 1.5rem 1.5rem round 1rem);
+  transition: clip-path 1s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+
+  .text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+      font-size: 7rem;
+
+      span {
+        display: block;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: $size-5;
+    }
+  }
+}
