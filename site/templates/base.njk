@@ -16,7 +16,10 @@
     </head>
     <body>
 
-        {# {% include 'nav.njk' %} #}
+        <header>
+            {% include 'nav.njk' %}
+        </header>
+        
         <main>
             {{ content | safe }}
         </main>

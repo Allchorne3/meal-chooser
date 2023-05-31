@@ -5,7 +5,8 @@
 @use 'base/typography';
 @use 'base/base';
 
-@use 'layouts/recipe-card';
+@use 'components/recipe-card';
+@use 'components/nav';
 
 @use 'sections/header';
 @use 'sections/footer';

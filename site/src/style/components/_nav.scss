@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+
+.nav {
+    background: white;
+    display: inline-block;
+    border-radius: 50px;
+    padding-inline: 12px;
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            flex: 1 1 0%;
+            text-align: center;
+            margin: 20px;
+            font-size: $size-5;
+        }
+    
+        a {
+            color: black;
+            position: relative;
+
+            &.is-active {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 85%;
+                    height: 3px;
+                    border-radius: 2px;
+                    background: black;
+                }
+            }
+        }
+    }
+}
