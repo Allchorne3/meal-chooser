@@ -19,9 +19,11 @@ h1 {
 h2 {
   margin-top: 1rem;
 
-  .content & {
+  &.subtitle {
     font-family: $ff-body;
     line-height: 1.4;
+    text-transform: uppercase;
+    font-size: $size-6;
   }
 }
 
@@ -32,8 +34,4 @@ p {
 
 strong {
   font-weight: $fw-700;
-}
-
-.section-title {
-  font-size: $size-4;
 }
